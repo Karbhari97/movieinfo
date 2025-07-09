@@ -11,7 +11,7 @@ const IconLayout = ({ focused, icon, text }) => {
     return (
       <ImageBackground
         source={images.highlight}
-        className="flex flex-row w-full flex-1 min-w-[88px] min-h-14 mt-4 justify-center items-center rounded-full overflow-hidden"
+        className="flex flex-row w-full flex-1 min-w-[85px] min-h-12 mt-2 justify-center items-center rounded-full overflow-hidden"
       >
         <Image source={icon} tintColor="#151312" className="size-5" />
         <Text className="text-secondery font-semibold ml-2 text-base">
@@ -21,7 +21,7 @@ const IconLayout = ({ focused, icon, text }) => {
     );
   } else {
     return (
-      <View className="justify-center items-center size-full rounded-full mt-4">
+      <View className="justify-center items-center size-full rounded-full mt-2">
         <Image source={icon} tintColor="#A8B5DB" className="size-5" />
       </View>
     );
@@ -42,8 +42,9 @@ const _layout = () => {
         tabBarStyle: {
           backgroundColor: "#0f0D23",
           borderRadius: 50,
+          borderColor:"#0f0D23",
           marginHorizontal: 20,
-          marginBottom: 20,
+          marginBottom: 30,
           height: 45,
           position: "absolute",
           overflow: "hidden",
