@@ -3,8 +3,8 @@ import React from 'react'
 
 const Details = () => {
   return (
-    <View>
-      <Text>Details</Text>
+    <View className="flex-1 bg-primary justify-center items-center">
+      <Text className='text-white'>Details</Text>
     </View>
   )
 }
